@@ -9,7 +9,7 @@ class ProductAnalysisRequest(BaseModel):
     quantidade: int = Field(ge=0)
     fornecedor: str = Field(min_length=2, max_length=100)
     dias_para_expiracao: int
-    temperatura_de_armazenamento: float
+    temperatura_de_armazenamento: float = Field(allow_inf_nan=False)
     historico_de_problemas: int = Field(ge=0)
 
 
