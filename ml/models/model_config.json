@@ -1,0 +1,7 @@
+{
+  "model": "LogisticRegression",
+  "class_weight": "balanced",
+  "threshold": 0.4,
+  "target": "precisa_revisao",
+  "positive_class": 1
+}
